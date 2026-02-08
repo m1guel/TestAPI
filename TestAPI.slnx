@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="TestAPI/Application/TestAPI.Application.DTOs/TestAPI.Application.DTOs.csproj" Id="6da4c43f-9e7c-4b6f-8f67-f38d5e803f81" />
+    <Project Path="TestAPI/Application/TestAPI.Application/TestAPI.Application.csproj" />
+  </Folder>
+  <Folder Name="/CrossCutting/" />
+  <Folder Name="/Domain/">
+    <Project Path="TestAPI/Domain/TestAPI.Domain.Auth/TestAPI.Domain.Auth.csproj" Id="bf8da193-3055-449e-999d-6b03bfd063ca" />
+    <Project Path="TestAPI/Domain/TestAPI.Domain.WeatherForecast/TestAPI.Domain.DataExample.csproj" Id="b0876275-3d55-4156-aee0-354469159c3d" />
+    <Project Path="TestAPI/Domain/TestAPI.Domain/TestAPI.Domain.csproj" Id="f8745ddc-5a80-4165-819c-0c63c58f5d01" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="TestAPI/Infrastructure/TestAPI.Infrastructure/TestAPI.Infrastructure.csproj" Id="a542d7da-e39d-4f37-8c94-90a41c587e6d" />
+  </Folder>
+  <Folder Name="/Infrastructure/Repositories/">
+    <Project Path="TestAPI/Infrastructure/Repositories/TestAPI.Infrastructure.Repositories/TestAPI.Infrastructure.Repositories.SqlServer.csproj" Id="7e00083b-7e78-43df-b3f3-07a31c7fa233" />
+  </Folder>
+  <Folder Name="/Infrastructure/Services/">
+    <Project Path="TestAPI/Infrastructure/Services/TestAPI.Infrastructure.Services.WebSocket/TestAPI.Infrastructure.Services.WebSockets.csproj" Id="819679d9-b6a0-4fdd-961a-4abf39894a87" />
+  </Folder>
+</Solution>

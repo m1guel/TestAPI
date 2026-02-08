@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\TestAPI.Domain.Auth\TestAPI.Domain.Auth.csproj" />
+    <ProjectReference Include="..\..\Domain\TestAPI.Domain.WeatherForecast\TestAPI.Domain.DataExample.csproj" />
+    <ProjectReference Include="..\..\Domain\TestAPI.Domain\TestAPI.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Services\TestAPI.Infrastructure.Services.WebSocket\TestAPI.Infrastructure.Services.WebSockets.csproj" />
+    <ProjectReference Include="..\TestAPI.Application.DTOs\TestAPI.Application.DTOs.csproj" />
+  </ItemGroup>
+
+
+</Project>
