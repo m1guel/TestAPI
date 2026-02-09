@@ -19,6 +19,7 @@ A production-ready RESTful Web API built with **.NET 10**, implementing **Clean 
 -  **Global Exception Handling** - Centralized error handling with custom domain exceptions
 -  **Structured Logging** - Comprehensive logging using ILogger with custom extensions
 -  **OpenAPI/Swagger** - Interactive API documentation
+-  **Docker Support** - Containerization with Docker for easy deployment
 
 ### Architecture Features
 -  **Clean Architecture** - Clear separation of concerns across layers
@@ -91,7 +92,7 @@ This project follows **Clean Architecture** principles with clear separation bet
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/TestAPI.git
+git clone https://github.com/m1guel/TestAPI.git
 cd TestAPI
 ```
 
@@ -130,6 +131,21 @@ dotnet ef database update --project Infrastructure\Repositories\TestAPI.Infrastr
 ```bash
 dotnet build
 ```
+
+### 5. Run the Application
+
+**Option A: Run Locally**
+```bash
+dotnet run --project TestAPI\Application\TestAPI.Application
+```
+
+**Option B: Run with Docker**
+```bash
+# Build the Docker image
+docker build -t testapi:latest -f TestAPI\Application\TestAPI.Application\Dockerfile .
+
+# Run the container
+docker run -d -p 8080:8080 -p 8081:8081 --name testapi testapi:latest
 
 ---
 
