@@ -146,6 +146,7 @@ docker build -t testapi:latest -f TestAPI\Application\TestAPI.Application\Docker
 
 # Run the container
 docker run -d -p 8080:8080 -p 8081:8081 --name testapi testapi:latest
+```
 
 ---
 
